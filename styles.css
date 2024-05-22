@@ -1,0 +1,248 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Showcase section */
+.showcase {
+  background-color: #f2f2f2;
+  padding: 50px;
+  text-align: center;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.showcase-content h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.showcase-content h2 {
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.btn-primary {
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 40px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Feature section */
+.features-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 50px;
+  text-align: center;
+}
+
+.features-section h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.features-section p {
+  margin-bottom: 40px;
+}
+
+/* Testimonial section */
+.testimonial-section {
+  background-color: #f2f2f2;
+  padding: 50px;
+  text-align: center;
+}
+
+.testimonial-info h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.testimonial-info p {
+  margin-bottom: 40px;
+}
+
+.user-testimonial {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.user-testimonial div {
+  flex: 1;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-testimonial p {
+  margin-bottom: 20px;
+}
+
+.user-testimonial h2 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.user-testimonial span {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Early access section */
+.input-container {
+  background-color: #007bff;
+  padding: 50px;
+  text-align: center;
+}
+
+.early-access h2 {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.early-access p {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.btn-secondary {
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+  background-color: #0056b3;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 40px;
+}
+
+.btn-secondary:hover {
+  background-color: #003c80;
+}
+
+#input-1 {
+  border-radius: 25px;
+  border: none;
+  padding: 15px;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+/* Footer section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer h4 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  margin-bottom: 40px;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #007bff;
+}
+
+.social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #007bff;
+  margin-right: 10px;
+  border-radius: 50%;
+  line-height: 40px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #0056b3;
+}
+
+/* Image styling*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Specific styles for icons to make them smaller */
+.logo,
+.feature-typography img,
+.testimonial-info img,
+.user-testimonial img,
+.footer .icon {
+  width: 50px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional specific styles for certain icons */
+.showcase .logo {
+  width: 100px;
+}
+
+.testimonial-section .banner-image {
+  width: 150px;
+}
+
+.user-testimonial img {
+  width: 40px; /* Specific width for user testimonial profile images */
+  border-radius: 50%; /* Circular profile images */
+}
+
+.footer .social-links .icon {
+  width: 30px; /* Specific width for social media icons */
+  height: 30px; /* Ensuring the icons are squares */
+}
