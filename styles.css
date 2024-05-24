@@ -7,7 +7,7 @@
 
 /* General styles */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #fff;
   color: #333;
 }
@@ -22,6 +22,10 @@ a {
   background-color: #f2f2f2;
   padding: 50px;
   text-align: center;
+}
+
+.navbar {
+  background-color: #4caf50; /* makes the navbar green */
 }
 
 .navbar nav {
@@ -169,7 +173,7 @@ a {
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 50px;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -224,7 +228,7 @@ img {
 .testimonial-info img,
 .user-testimonial img,
 .footer .icon {
-  width: 50px; /* Adjust width as needed */
+  width: 40px; /* Adjust width as needed */
   height: auto; /* Maintain aspect ratio */
 }
 
@@ -244,5 +248,5 @@ img {
 
 .footer .social-links .icon {
   width: 30px; /* Specific width for social media icons */
-  height: 30px; /* Ensuring the icons are squares */
+  height: auto;
 }

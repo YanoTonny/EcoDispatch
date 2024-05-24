@@ -1,0 +1,107 @@
+/* Global Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #4caf50;
+  overflow: hidden;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navbar img.logo {
+  height: 50px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* About Page Styles */
+.about-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-container h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.about-container p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.image-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.image-item p {
+  margin-top: 10px;
+}
+
+/* Additional Page Styles */
+/* Add styles for other pages here */

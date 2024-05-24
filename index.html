@@ -30,14 +30,25 @@
         <nav>
           <img class="logo" src="images/Logo.jpg" alt="logo" />
           <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#">Restaurants</a></li>
-            <li><a href="#">Organizations</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#features.html">Features</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="organizations.html">Organizations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
+
+      <section id="home">
+        <div class="container">
+          <h2>Welcome to ecoDispatch</h2>
+          <p>
+            Your reliable partner in green logistics, using eco-friendly e-bikes
+            and electric vehicles for all deliveries.
+          </p>
+        </div>
+      </section>
+
       <div class="showcase-content">
         <img src="images/delivery1-guy.jpg" alt="delivery-guy" />
         <h1>
@@ -182,8 +193,16 @@
           Sign up today and be the first to experience eco-conscious deliveries
           in Nairobi. Help us build a greener future for our city.
         </p>
-        <button type="submit" class="btn-secondary">Sign Up Now</button>
-        <input placeholder="Enter your email" type="email" id="input-1" />
+        <form id="earlyAccessForm" action="/early-access" method="post">
+          <input
+            placeholder="Enter your email"
+            type="email"
+            id="input-1"
+            name="email"
+            required
+          />
+          <button type="submit" class="btn-secondary">Sign Up Now</button>
+        </form>
       </div>
     </div>
 
@@ -240,6 +259,6 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
