@@ -24,19 +24,45 @@ a {
   text-align: center;
 }
 
+/* Effects to give the nav bar a glass look */
 .navbar {
-  background-color: #4caf50; /* makes the navbar green */
+  background-color: #4caf50;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+  border: 2px solid rgba(255, 255, 255, 0.18);
 }
 
 .navbar nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
 }
 
 .navbar ul {
-  display: flex;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* display: flex; */
+  /* list-style-type: none; */
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar img.logo {
+  height: 50px;
 }
 
 .navbar li {
