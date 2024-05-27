@@ -63,7 +63,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Restaurant Registration Form Submission (if applicable)
+  document
+    .getElementById('registration-form')
+    .addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const orgName = document.getElementById('org-name').value;
+      const email = document.getElementById('email').value;
+
+      console.log('Organization Name:', orgName);
+      console.log('Email:', email);
+
+      alert('Thank you for registering!');
+    });
+
+  // Restaurant Registration Form Submission
   const restaurantRegistrationForm = document.getElementById(
     'restaurantRegistrationForm'
   );
