@@ -268,7 +268,7 @@ img {
 }
 
 .user-testimonial img {
-  width: 40px; /* Specific width for user testimonial profile images */
+  width: 50px; /* Specific width for user testimonial profile images */
   border-radius: 50%; /* Circular profile images */
 }
 

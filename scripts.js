@@ -30,7 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
       const email = formData.get('email');
       const message = formData.get('message');
 
-      // Dummy implementation: You would need to handle form submission via server-side processing
+      alert(
+        'Thank you for contacting EcoDispatch. A representative will reach out to you shortly!'
+      );
 
       // Dummy console log to display form data
       console.log('Name:', name);
@@ -53,7 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const formData = new FormData(earlyAccessForm);
       const email = formData.get('email');
 
-      // Dummy implementation: You would need to handle form submission via server-side processing
+      // Display a welcome message
+      alert('Welcome to the green eco-friendly revolution!');
 
       // Dummy console log to display form data
       console.log('Email:', email);
@@ -77,36 +80,43 @@ document.addEventListener('DOMContentLoaded', function () {
       alert('Thank you for registering!');
     });
 
-  // Restaurant Registration Form Submission
-  const restaurantRegistrationForm = document.getElementById(
-    'restaurantRegistrationForm'
-  );
-
-  if (restaurantRegistrationForm) {
-    restaurantRegistrationForm.addEventListener('submit', function (event) {
-      event.preventDefault(); // Prevent default form submission
-
-      // Retrieve form data
-      const formData = new FormData(restaurantRegistrationForm);
-      const restaurantName = formData.get('restaurantName');
-      const ownerName = formData.get('ownerName');
-      const email = formData.get('email');
-      const phone = formData.get('phone');
-      const address = formData.get('address');
-      const description = formData.get('description');
-
-      // Dummy implementation: You would need to handle form submission via server-side processing
-
-      // Dummy console log to display form data
-      console.log('Restaurant Name:', restaurantName);
-      console.log("Owner's Name:", ownerName);
-      console.log('Email:', email);
-      console.log('Phone:', phone);
-      console.log('Address:', address);
-      console.log('Description:', description);
-
-      // Reset the form after submission
-      restaurantRegistrationForm.reset();
-    });
-  }
+  // For example, scrolling to the registration form
+  document
+    .getElementById('registration-form')
+    .scrollIntoView({ behavior: 'smooth' });
 });
+
+// Restaurant Registration Form Submission
+const restaurantRegistrationForm = document.getElementById(
+  'restaurantRegistrationForm'
+);
+
+if (restaurantRegistrationForm) {
+  restaurantRegistrationForm.addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Retrieve form data
+    const formData = new FormData(restaurantRegistrationForm);
+    const restaurantName = formData.get('restaurantName');
+    const ownerName = formData.get('ownerName');
+    const email = formData.get('email');
+    const phone = formData.get('phone');
+    const address = formData.get('address');
+    const description = formData.get('description');
+
+    // Dummy implementation: You would need to handle form submission via server-side processing
+
+    // Dummy console log to display form data
+    console.log('Restaurant Name:', restaurantName);
+    console.log("Owner's Name:", ownerName);
+    console.log('Email:', email);
+    console.log('Phone:', phone);
+    console.log('Address:', address);
+    console.log('Description:', description);
+
+    alert('Welcome to the green eco-friendly revolution!');
+
+    // Reset the form after submission
+    restaurantRegistrationForm.reset();
+  });
+}

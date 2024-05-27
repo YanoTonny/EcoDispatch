@@ -106,5 +106,151 @@ body {
   margin-top: 10px;
 }
 
-/* Additional Page Styles */
-/* Add styles for other pages here */
+/* General form styling */
+#registration-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Ensure form fields are displayed vertically */
+#registration-form label,
+#registration-form input,
+#registration-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style for the input fields */
+#registration-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style for the submit button */
+#registration-form button[type='submit'] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style for the submit button on hover */
+#registration-form button[type='submit']:hover {
+  background-color: #45a049;
+}
+
+/* Additional button styling */
+.btn-primary {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* General form styling */
+#contactForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Ensures form fields are displayed vertically */
+#contactForm label,
+#contactForm input,
+#contactForm textarea,
+#contactForm button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style for the input fields */
+#contactForm input,
+#contactForm textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style for the submit button */
+#contactForm button[type='submit'] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style for the submit button on hover */
+#contactForm button[type='submit']:hover {
+  background-color: #45a049;
+}
+
+/* General form styling */
+#restaurantRegistrationForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Ensure form fields are displayed vertically */
+#restaurantRegistrationForm label,
+#restaurantRegistrationForm input,
+#restaurantRegistrationForm textarea,
+#restaurantRegistrationForm button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style for the input fields */
+#restaurantRegistrationForm input,
+#restaurantRegistrationForm textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style for the submit button */
+#restaurantRegistrationForm button[type='submit'] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style for the submit button on hover */
+#restaurantRegistrationForm button[type='submit']:hover {
+  background-color: #45a049;
+}
