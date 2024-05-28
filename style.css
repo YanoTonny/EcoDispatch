@@ -116,7 +116,7 @@ body {
   background-color: #f9f9f9;
 }
 
-/* Ensure form fields are displayed vertically */
+/* Ensures form fields are displayed vertically */
 #registration-form label,
 #registration-form input,
 #registration-form button {
@@ -220,7 +220,7 @@ body {
   background-color: #f9f9f9;
 }
 
-/* Ensure form fields are displayed vertically */
+/* Ensures form fields are displayed vertically */
 #restaurantRegistrationForm label,
 #restaurantRegistrationForm input,
 #restaurantRegistrationForm textarea,

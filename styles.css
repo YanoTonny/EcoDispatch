@@ -29,11 +29,11 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 400px; /* Adjust the width as needed */
+  width: 400px; /* Adjusts the width as needed */
 }
 
 .form-container {
-  margin-bottom: 20px; /* Add space between the forms */
+  margin-bottom: 20px; /* Adds space between the forms */
 }
 
 .form-container h2 {
@@ -70,7 +70,7 @@ body {
 }
 
 .content {
-  display: none; /* Hide content initially */
+  display: none; /* Hides content initially */
 }
 
 a {
@@ -108,8 +108,6 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
-  /* display: flex; */
-  /* list-style-type: none; */
 }
 
 .navbar ul li {
@@ -258,7 +256,7 @@ a {
 
 /* Footer section */
 .footer {
-  background-color: hsl(356, 85%, 73%);
+  background-color: hsl(261, 71%, 60%);
   color: #fff;
   padding: 10px 0;
   text-align: center;
@@ -315,8 +313,8 @@ img {
 .testimonial-info img,
 .user-testimonial img,
 .footer .icon {
-  width: 40px; /* Adjust width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 40px;
+  height: auto;
 }
 
 /* Additional specific styles for certain icons */
@@ -329,8 +327,8 @@ img {
 }
 
 .user-testimonial img {
-  width: 50px; /* Specific width for user testimonial profile images */
-  border-radius: 50%; /* Circular profile images */
+  width: 50px;
+  border-radius: 50%;
 }
 
 .footer .social-links .icon {

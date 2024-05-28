@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
     earlyAccessForm.addEventListener('submit', function (event) {
       event.preventDefault(); // Prevent default form submission
 
-      // Retrieve form data
+      // Retrieves form data
       const formData = new FormData(earlyAccessForm);
       const email = formData.get('email');
 
-      // Send form data to the server
+      // Sends form data to the server
       fetch('/early-access', {
         method: 'POST',
         headers: {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
           displayMessage('There was an error. Please try again.');
         });
 
-      // Reset the form after submission
+      // Resets the form after submission
       earlyAccessForm.reset();
     });
   }
@@ -52,9 +52,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const authModal = document.getElementById('auth-modal');
   const content = document.querySelector('.content');
 
-  const apiBaseUrl = 'http://localhost:3000'; // port backend runs on
+  const apiBaseUrl = 'http://localhost:3000'; // the port backend runs on
 
-  // Check if user is already authenticated
+  // Checks if user is already authenticated
   const isAuthenticated = sessionStorage.getItem('authenticated');
   if (isAuthenticated) {
     authModal.style.display = 'none';
@@ -130,9 +130,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (contactForm) {
     contactForm.addEventListener('submit', function (event) {
-      event.preventDefault(); // Prevent default form submission
+      event.preventDefault(); // Prevents default form submission
 
-      // Retrieve form data
+      // Retrieves form data
       const formData = new FormData(contactForm);
       const name = formData.get('name');
       const email = formData.get('email');
