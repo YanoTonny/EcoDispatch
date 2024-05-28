@@ -40,7 +40,8 @@ Users can send inquiries to the EcoDispatch team through the contact form.
 Early Access Form
 Users interested in receiving updates can fill out the early access form.
 
-Endpoints
+# Endpoints
+
 User Registration
 URL: /register
 Method: POST
