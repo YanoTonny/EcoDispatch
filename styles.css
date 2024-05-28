@@ -12,6 +12,67 @@ body {
   color: #333;
 }
 
+.auth-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Adjust the width as needed */
+}
+
+.form-container {
+  margin-bottom: 20px; /* Add space between the forms */
+}
+
+.form-container h2 {
+  margin-top: 0;
+}
+
+.form-container label,
+.form-container input,
+.form-container button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+.content {
+  display: none; /* Hide content initially */
+}
+
 a {
   text-decoration: none;
   color: inherit;
