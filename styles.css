@@ -254,7 +254,7 @@ a {
 
 /* Early access section */
 .input-container {
-  background-color: #007bff;
+  background-color: hsl(261, 71%, 60%);
   padding: 50px;
   text-align: center;
 }
