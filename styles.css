@@ -29,7 +29,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 400px; /* Adjusts the width as needed */
+  width: 400px;
 }
 
 .form-container {
@@ -90,14 +90,14 @@ a {
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(10px);
-  padding: 10px; /* Adjust padding as needed */
+  padding: 10px;
   position: fixed; /* Fix the navbar at the top */
-  width: 100%; /* Make it full-width */
+  width: 100%;
   top: 0; /* Position it at the top */
   z-index: 1000; /* Ensure it stays on top */
   box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
   border: 2px solid rgba(255, 255, 255, 0.18);
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  box-sizing: border-box;
   overflow: hidden; /* Prevent overflow */
 }
 
@@ -147,19 +147,23 @@ a {
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .navbar nav {
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start */
-    padding: 10px; /* Adjust padding for smaller screens */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
   }
 
   .navbar ul {
     flex-direction: column; /* Stack nav items vertically */
-    width: 100%; /* Full width for nav items */
+    width: 100%;
   }
 
   .navbar ul li {
-    margin: 5px 0; /* Adjust margin for vertical alignment */
+    margin: 5px 0;
   }
+}
+
+#home .container h2 {
+  color: green;
 }
 
 .showcase-content h1 {

@@ -10,27 +10,26 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(10px);
-  padding: 10px; /* Adjust padding as needed */
-  position: fixed; /* Fix the navbar at the top */
-  width: 100%; /* Make it full-width */
-  top: 0; /* Position it at the top */
-  z-index: 1000; /* Ensure it stays on top */
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
   box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
   border: 2px solid rgba(255, 255, 255, 0.18);
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
-  overflow: hidden; /* Prevent overflow */
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* Flex container for the navigation elements */
 .navbar nav {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between logo and nav items */
+  justify-content: space-between;
   width: 95%;
   padding: 0;
 }
 
-/* Reset list styles and apply flexbox */
 .navbar ul {
   list-style-type: none;
   margin: 0;
@@ -40,26 +39,22 @@ body {
   overflow-x: auto; /* Allow horizontal scrolling if needed */
 }
 
-/* Margin for list items */
 .navbar ul li {
   margin: 0 10px;
-  white-space: nowrap; /* Prevent wrapping */
+  white-space: nowrap;
 }
 
-/* Styling for navigation links */
 .navbar ul li a {
   color: #333;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* Logo styling */
 .navbar img.logo {
   height: 50px;
-  flex-shrink: 0; /* Prevent logo from shrinking */
+  flex-shrink: 0;
 }
 
-/* Adjust margin for list items */
 .navbar li {
   margin-right: 20px;
 }
@@ -67,18 +62,18 @@ body {
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .navbar nav {
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start */
-    padding: 10px; /* Adjust padding for smaller screens */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
   }
 
   .navbar ul {
-    flex-direction: column; /* Stack nav items vertically */
-    width: 100%; /* Full width for nav items */
+    flex-direction: column;
+    width: 100%;
   }
 
   .navbar ul li {
-    margin: 5px 0; /* Adjust margin for vertical alignment */
+    margin: 5px 0;
   }
 }
 
@@ -108,7 +103,6 @@ body {
   text-decoration: none;
 }
 
-/* About Page Styles */
 .about-container {
   max-width: 500px;
   margin: auto;
@@ -147,7 +141,6 @@ body {
   margin-top: 10px;
 }
 
-/* General form styling */
 #registration-form {
   max-width: 400px;
   margin: 0 auto;
@@ -204,6 +197,35 @@ body {
 
 .btn-primary:hover {
   background-color: #0056b3;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+/* Gives the heading a color  */
+.contact-container h1,
+.contact-container h2 {
+  color: green;
+}
+
+.contact-image img {
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-details p {
+  margin: 10px 0;
+}
+
+.contact-details img {
+  margin-right: 10px;
 }
 
 /* General form styling */
