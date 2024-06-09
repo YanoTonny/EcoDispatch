@@ -1,33 +1,35 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@400;500;700&display=swap');
+
 /* Global Styles */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
-/* Styling for the navbar container */
+/* Navbar styles */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(10px);
   padding: 10px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
-  border: 2px solid rgba(255, 255, 255, 0.18);
-  box-sizing: border-box;
-  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Flex container for the navigation elements */
 .navbar nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 95%;
-  padding: 0;
+  margin: 0 auto;
 }
 
 .navbar ul {
@@ -36,18 +38,22 @@ body {
   padding: 0;
   display: flex;
   align-items: center;
-  overflow-x: auto; /* Allow horizontal scrolling if needed */
 }
 
 .navbar ul li {
-  margin: 0 10px;
-  white-space: nowrap;
+  margin: 0 15px;
 }
 
 .navbar ul li a {
   color: #333;
+  font-size: 20px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #007bff;
 }
 
 .navbar img.logo {
@@ -59,7 +65,6 @@ body {
   margin-right: 20px;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .navbar nav {
     flex-direction: column;
@@ -78,11 +83,11 @@ body {
 }
 
 .main-content {
-  padding: 20px;
+  padding: 80px 20px 20px;
 }
 
 .footer {
-  background-color: hsl(261, 71%, 60%);
+  background-color: #343a40;
   color: white;
   padding: 20px;
   text-align: center;
@@ -95,30 +100,44 @@ body {
 
 .footer ul li {
   display: inline;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 .footer ul li a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #007bff;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
 }
 
 .about-container {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
+  padding: 20px;
 }
 
 .about-container h1 {
   font-size: 36px;
   color: #333;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .about-container h2 {
-  font-size: 24px;
+  font-size: 28px;
   color: #333;
   margin-top: 20px;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .about-container p {
@@ -130,24 +149,34 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
+  padding: 20px;
 }
 
 .image-item img {
-  width: 50%;
-  border-radius: 5px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-item img:hover {
+  transform: scale(1.05);
 }
 
 .image-item p {
   margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
 }
 
 #registration-form {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  background-color: #f9f9f9;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Ensures form fields are displayed vertically */
@@ -170,17 +199,18 @@ body {
 /* Style for the submit button */
 #registration-form button[type='submit'] {
   padding: 10px 20px;
-  background-color: #4caf50;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 /* Style for the submit button on hover */
 #registration-form button[type='submit']:hover {
-  background-color: #45a049;
+  background-color: #0056b3;
 }
 
 /* Additional button styling */
@@ -193,6 +223,7 @@ body {
   font-size: 16px;
   cursor: pointer;
   margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
@@ -206,14 +237,18 @@ body {
   text-align: center;
   font-family: Arial, sans-serif;
 }
+
 /* Gives the heading a color  */
 .contact-container h1,
 .contact-container h2 {
-  color: green;
+  color: #007bff;
+  font-weight: 600;
 }
 
 .contact-image img {
   margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-details {
@@ -230,12 +265,13 @@ body {
 
 /* General form styling */
 #contactForm {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  background-color: #f9f9f9;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Ensures form fields are displayed vertically */
@@ -260,27 +296,29 @@ body {
 /* Style for the submit button */
 #contactForm button[type='submit'] {
   padding: 10px 20px;
-  background-color: #4caf50;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 /* Style for the submit button on hover */
 #contactForm button[type='submit']:hover {
-  background-color: #45a049;
+  background-color: #0056b3;
 }
 
 /* General form styling */
 #restaurantRegistrationForm {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto 40px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  background-color: #f9f9f9;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Ensures form fields are displayed vertically */
@@ -305,25 +343,28 @@ body {
 /* Style for the submit button */
 #restaurantRegistrationForm button[type='submit'] {
   padding: 10px 20px;
-  background-color: #4caf50;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 /* Style for the submit button on hover */
 #restaurantRegistrationForm button[type='submit']:hover {
-  background-color: #45a049;
+  background-color: #0056b3;
 }
 
-/*styling for the benefits list*/
+/* Styling for the benefits list */
 .benefits-list {
   list-style: decimal inside;
   padding-left: 20px;
 }
 
 .benefits-list li {
-  margin-bottom: 37px; /* Add space between list items */
+  margin-bottom: 15px; /* Add space between list items */
+  font-weight: 500;
+  color: #333;
 }
