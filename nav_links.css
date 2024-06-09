@@ -12,7 +12,7 @@ body {
 
 /* Navbar styles */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.85);
+  background: linear-gradient(135deg, #ff69b4, #9370db);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(10px);
   padding: 10px;
@@ -87,7 +87,7 @@ body {
 }
 
 .footer {
-  background-color: #343a40;
+  background: linear-gradient(135deg, #ff69b4, #9370db);
   color: white;
   padding: 20px;
   text-align: center;
@@ -121,7 +121,7 @@ body {
 
 .about-container {
   max-width: 600px;
-  margin: auto;
+  margin: 75px auto 20px;
   padding: 20px;
 }
 
