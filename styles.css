@@ -36,7 +36,8 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
 }
 
 .form-container {
@@ -45,6 +46,7 @@ body {
 
 .form-container h2 {
   margin-top: 0;
+  font-size: 24px;
 }
 
 .form-container label,
@@ -98,11 +100,13 @@ a {
 .showcase-content h1 {
   font-weight: 700;
   margin-bottom: 20px;
+  font-size: 36px;
 }
 
 .showcase-content h2 {
   font-weight: 400;
   margin-bottom: 40px;
+  font-size: 24px;
 }
 
 /* Button styles */
@@ -122,7 +126,6 @@ a {
 }
 
 /* Navbar styles */
-
 .navbar {
   background: linear-gradient(135deg, #ff69b4, #9370db);
   backdrop-filter: blur(20px);
@@ -161,7 +164,7 @@ a {
 }
 
 .navbar ul li a {
-  color: #333;
+  color: #fff;
   font-size: 20px;
   text-decoration: none;
   font-weight: 500;
@@ -211,10 +214,12 @@ a {
 .features-section h2 {
   font-weight: 700;
   margin-bottom: 20px;
+  font-size: 28px;
 }
 
 .features-section p {
   margin-bottom: 40px;
+  font-size: 18px;
 }
 
 /* Testimonial section */
@@ -227,10 +232,12 @@ a {
 .testimonial-info h1 {
   font-weight: 700;
   margin-bottom: 20px;
+  font-size: 32px;
 }
 
 .testimonial-info p {
   margin-bottom: 40px;
+  font-size: 18px;
 }
 
 .user-testimonial {
@@ -251,11 +258,12 @@ a {
 
 .user-testimonial p {
   margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .user-testimonial h2 {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .user-testimonial span {
@@ -280,12 +288,14 @@ a {
   font-weight: 700;
   color: #333;
   margin-bottom: 20px;
+  font-size: 28px;
 }
 
 .early-access p {
   font-weight: 700;
   color: #333;
   margin-bottom: 40px;
+  font-size: 18px;
 }
 
 .btn-secondary {
@@ -310,6 +320,7 @@ a {
   padding: 15px;
   width: 70%;
   margin-bottom: 20px;
+  font-size: 16px;
 }
 
 /* Footer section */
@@ -323,6 +334,7 @@ a {
 .footer h4 {
   font-weight: 700;
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .footer ul {
