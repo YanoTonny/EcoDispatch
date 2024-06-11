@@ -34,6 +34,12 @@ db.connect((err) => {
 app.post('/early-access', (req, res) => {
   const { email } = req.body;
 
+  if (!email) {
+    return res
+      .status(400)
+      .send({ success: false, message: 'Email is required' });
+  }
+
   const query = 'INSERT INTO early_access (email) VALUES (?)';
   db.query(query, [email], (err, result) => {
     if (err) {
@@ -49,6 +55,12 @@ app.post('/early-access', (req, res) => {
 // Handle contact form submission
 app.post('/contact', (req, res) => {
   const { name, email, message } = req.body;
+
+  if (!name || !email || !message) {
+    return res
+      .status(400)
+      .send({ success: false, message: 'All fields are required' });
+  }
 
   const query = 'INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)';
   db.query(query, [name, email, message], (err, result) => {
@@ -66,6 +78,13 @@ app.post('/contact', (req, res) => {
 // Handle user registration
 app.post('/register', (req, res) => {
   const { username, email, password } = req.body;
+
+  if (!username || !email || !password) {
+    return res
+      .status(400)
+      .send({ success: false, message: 'All fields are required' });
+  }
+
   const hashedPassword = bcrypt.hashSync(password, 8);
 
   const query =
@@ -84,6 +103,12 @@ app.post('/register', (req, res) => {
 // Handle user login
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
+
+  if (!username || !password) {
+    return res
+      .status(400)
+      .send({ success: false, message: 'Username and password are required' });
+  }
 
   const query = 'SELECT * FROM users WHERE username = ?';
   db.query(query, [username], (err, results) => {
@@ -118,6 +143,19 @@ app.post('/registerRestaurant', (req, res) => {
   const { restaurantName, ownerName, email, phone, address, description } =
     req.body;
 
+  if (
+    !restaurantName ||
+    !ownerName ||
+    !email ||
+    !phone ||
+    !address ||
+    !description
+  ) {
+    return res
+      .status(400)
+      .send({ success: false, message: 'All fields are required' });
+  }
+
   const query =
     'INSERT INTO restaurants (restaurantName, ownerName, email, phone, address, description) VALUES (?, ?, ?, ?, ?, ?)';
   db.query(
@@ -140,6 +178,13 @@ app.post('/registerRestaurant', (req, res) => {
 // Handle organization registration form submission
 app.post('/registerOrganization', (req, res) => {
   const { orgName, email } = req.body;
+
+  if (!orgName || !email) {
+    return res.status(400).send({
+      success: false,
+      message: 'Organization name and email are required',
+    });
+  }
 
   const query = 'INSERT INTO organizations (orgName, email) VALUES (?, ?)';
   db.query(query, [orgName, email], (err, result) => {
